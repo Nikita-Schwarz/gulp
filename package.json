@@ -10,6 +10,18 @@
     "zip": "gulp deployZIP --build",
     "preview": "npm run build && npx serve ./build"
   },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nikita-Schwarz/gulp.git"
+	},
+  "keywords": [
+		"gulp",
+		"webpack",
+		"js",
+		"css",
+		"scss",
+		"html"
+	],
   "author": "Nikita Schwarz",
   "license": "MIT",
   "devDependencies": {
