@@ -17,14 +17,11 @@
     transition: background-color .2s linear;
 
     @include breakpoint($tablet-bp) {
-        //margin: 0 5px;
-
         top: 0;
         left: 0;
         right: 0;
 
         border-radius: 0;
-
 
         background-color: $black;
     }
