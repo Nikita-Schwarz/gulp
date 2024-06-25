@@ -8,20 +8,21 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
+    "deploy": "gh-pages -d build",
     "preview": "npm run build && npx serve ./build"
   },
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/Nikita-Schwarz/gulp.git"
-	},
+    "type": "git",
+    "url": "git+https://github.com/Nikita-Schwarz/gulp.git"
+  },
   "keywords": [
-		"gulp",
-		"webpack",
-		"js",
-		"css",
-		"scss",
-		"html"
-	],
+    "gulp",
+    "webpack",
+    "js",
+    "css",
+    "scss",
+    "html"
+  ],
   "author": "Nikita Schwarz",
   "license": "MIT",
   "devDependencies": {
@@ -31,6 +32,7 @@
     "browser-sync": "^3.0.2",
     "chalk": "^5.3.0",
     "del": "^7.1.0",
+    "gh-pages": "^6.1.1",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
