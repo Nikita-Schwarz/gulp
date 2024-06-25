@@ -544,31 +544,59 @@ body {
   }
 }
 
-.sidebar-icon {
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-icon {
   width: 15rem;
   height: 15rem;
   margin: 1.5rem auto;
+  border-radius: 50%;
 }
-.sidebar-icon img {
+.profile-icon img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 3px solid rgb(134, 134, 134);
+  border: 3px solid #dfdfdf;
   border-radius: 50%;
+  transition: border 0.3s ease-in-out;
+}
+.profile-icon:hover img {
+  border: 3px solid #3137C9;
 }
 
 .profile-name {
   font-size: 1.8rem;
   font-weight: 700;
-  display: block;
+}
+
+.profile-subname {
+  font-size: 1.4rem;
   margin-bottom: 1.2rem;
-  text-align: center;
+  color: #dfdfdf;
 }
 
 .profile-description {
-  margin: 0 1.5rem;
-  text-align: center;
+  margin: 0 1.5rem 1.2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .social {
+    display: none;
+  }
+}
+
+.social-item {
+  margin: 0 0.75rem;
 }
 
 .post {
@@ -594,10 +622,12 @@ body {
 
 .post-open {
   font-size: 1.4rem;
+  color: #3137C9;
 }
 
 .post-description {
   margin-bottom: 1.5rem;
+  color: #dfdfdf;
 }
 
 .post-preview {
@@ -605,8 +635,8 @@ body {
   height: 30rem;
 }
 .post-preview img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 /*# sourceMappingURL=styles.min.css.map */
