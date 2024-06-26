@@ -5,18 +5,23 @@
 html {
     font-size: 62.5%;
 
-    background-color: $secondary;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: fixed;
-    height: 100vh;
+    &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background-color: $secondary;
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
 
-    @include breakpoint ($tablet-bp) {
-        height: calc(var(--vh) + 100vh);
+        @include breakpoint ($tablet-bp) {
+            height: calc(var(--vh) + 100vh);
+        }
     }
-
 }
 
 body {
