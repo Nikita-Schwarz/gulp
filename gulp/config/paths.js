@@ -1,5 +1,5 @@
-const srcPath = './src';
-const distPath = './build';
+const srcPath = 'src';
+const distPath = 'build';
 
 const paths = {
     build: {

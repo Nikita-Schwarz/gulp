@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-
+/*
     &::before {
         content: '';
         top: 0;
@@ -11,7 +11,7 @@
         right: 0;
         position: fixed;
         background-color: $secondary;
-        background-image: url('../images/bg.jpg');
+        background-image: url('../images/bg.jpg'), linear-gradient(#eb01a5, #d13531);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -20,5 +20,5 @@
         @include breakpoint ($tablet-bp) {
             height: calc(var(--vh) + 100vh);
         }
-    }
+    } */
 }
