@@ -4,6 +4,19 @@
 
 html {
     font-size: 62.5%;
+
+    background-color: $secondary;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    height: 100vh;
+
+    @include breakpoint ($tablet-bp) {
+        height: calc(var(--vh) + 100vh);
+    }
+
 }
 
 body {
@@ -12,17 +25,7 @@ body {
 
     color: $white;
 
-    background-color: $secondary;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
-    height: 100vh;
 
-    @include breakpoint ($tablet-bp) {
-        height: calc(var(--vh) + 100vh);
-    }
 }
 
 
