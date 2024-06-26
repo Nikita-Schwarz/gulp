@@ -12,7 +12,8 @@
 
     overflow: hidden;
 
-    //animation: wipe-in-down .2s both;
+    animation: wipe-out-up .2s both;
+	animation-delay: 5s;
 
     z-index: $z-index-header;
 
@@ -25,9 +26,14 @@
         }
       }
 
-      [transition-style="in:wipe:down"] {
-        animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+    @keyframes wipe-out-up {
+      from {
+        clip-path: inset(0 0 0 0);
       }
+      to {
+        clip-path: inset(0 0 100% 0);
+      }
+    }
 }
 
 .subnav-link {
