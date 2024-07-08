@@ -1,5 +1,5 @@
 .subnav {
-    display: none;
+    //display: none;
 
     width: 20rem;
 
@@ -13,27 +13,11 @@
     overflow: hidden;
 
     animation: wipe-out-up .2s both;
-	animation-delay: 5s;
+	//animation-delay: 5s;
 
     z-index: $z-index-header;
 
-    @keyframes wipe-in-down {
-        from {
-          clip-path: inset(0 0 100% 0);
-        }
-        to {
-          clip-path: inset(0 0 0 0);
-        }
-      }
 
-    @keyframes wipe-out-up {
-      from {
-        clip-path: inset(0 0 0 0);
-      }
-      to {
-        clip-path: inset(0 0 100% 0);
-      }
-    }
 }
 
 .subnav-link {
@@ -47,4 +31,23 @@
     &:hover {
         background-color: darken($blue, 5%);
     }
+}
+
+
+@keyframes wipe-in-down {
+	from {
+		clip-path: inset(0 0 100% 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes wipe-out-up {
+	from {
+		clip-path: inset(0 0 0 0);
+	}
+	to {
+		clip-path: inset(0 0 100% 0);
+	}
 }

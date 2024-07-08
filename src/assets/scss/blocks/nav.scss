@@ -5,6 +5,8 @@
 .nav-item {
     position: relative;
 
+    transition: all .2s both;
+
     &:hover {
         .nav-link {
             background-color: $blue;
@@ -22,6 +24,8 @@
     padding: 1.3rem;
 
     border-radius: $border-radius;
+
+
 
     &.has-subnav {
         position: relative;
@@ -46,4 +50,3 @@
         }
     }
 }
-
