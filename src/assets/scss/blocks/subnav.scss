@@ -1,5 +1,10 @@
 .subnav {
+    //opacity: 0;
+    //visibility: hidden;
     //display: none;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+
 
     width: 20rem;
 
@@ -31,23 +36,4 @@
     &:hover {
         background-color: darken($blue, 5%);
     }
-}
-
-
-@keyframes wipe-in-down {
-	from {
-		clip-path: inset(0 0 100% 0);
-	}
-	to {
-		clip-path: inset(0 0 0 0);
-	}
-}
-
-@keyframes wipe-out-up {
-	from {
-		clip-path: inset(0 0 0 0);
-	}
-	to {
-		clip-path: inset(0 0 100% 0);
-	}
 }

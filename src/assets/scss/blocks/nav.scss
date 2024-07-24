@@ -5,7 +5,7 @@
 .nav-item {
     position: relative;
 
-    transition: all .2s both;
+    //transition: all .2s linear;
 
     &:hover {
         .nav-link {
@@ -13,7 +13,9 @@
         }
 
         >.subnav {
-            display: block;
+            //display: block;
+            opacity: 1;
+            visibility: visible;
             animation: wipe-in-down .2s both;
         }
     }
