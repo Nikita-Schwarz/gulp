@@ -6,39 +6,13 @@ html {
     font-size: 62.5%;
 }
 
-/*     &::before {
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        background-color: $secondary;
-        background-image: url('../images/bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-
-        z-index: -1;
-
-        @include breakpoint ($tablet-bp) {
-            height: calc(var(--vh) + 100vh);
-        }
-    }
-}  */
 
 body {
-    font-size: 1.5rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.6rem;
+    font-family: "Fira Sans", "Noto Sans", sans-serif;
 
     color: $white;
-
-    background-color: $secondary;
-    //background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
+    background-color: $primary;
 
     @include breakpoint ($tablet-bp) {
         height: calc(var(--vh) + 100vh);

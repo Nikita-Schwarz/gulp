@@ -1,5 +1,5 @@
 .main {
-    padding: calc(5rem + ($position-block-padding * 2)) 0 8rem calc($sidebar-width + $position-block-padding);
+    padding: 8rem 0 0 $sidebar-width;
 
     @include breakpoint($tablet-bp) {
         padding: 7rem 0 5rem;

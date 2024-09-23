@@ -5,21 +5,3 @@
     }
 
 }
-
-@keyframes wipe-in-down {
-	from {
-		clip-path: inset(0 0 100% 0);
-	}
-	to {
-		clip-path: inset(0 0 0 0);
-	}
-}
-
-@keyframes wipe-out-up {
-	from {
-		clip-path: inset(0 0 0 0);
-	}
-	to {
-		clip-path: inset(0 0 100% 0);
-	}
-}

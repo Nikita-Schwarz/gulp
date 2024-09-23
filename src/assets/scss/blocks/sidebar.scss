@@ -1,18 +1,16 @@
 .sidebar {
     width: $sidebar-width;
 
-    border-radius: $border-radius;
-    backdrop-filter: $bd-filter;
-    background-color: $primary;
+    background-color: $secondary;
 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); */
 
     position: fixed;
-    top: $position-block-padding;
-    left: $position-block-padding;
-    bottom: $position-block-padding;
+    top: 0;
+    left: 0;
+    bottom: 0;
 
-    z-index: 1000;
+    z-index: $z-index-sidebar;
 
     @include breakpoint($tablet-bp) {
         display: none;
