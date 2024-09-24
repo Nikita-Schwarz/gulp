@@ -8,14 +8,13 @@
 
     width: 20rem;
 
-    border-radius: 0 $border-radius $border-radius $border-radius;
-    background-color: $blue;
+    border-radius: 0 0 4px 4px;
+
+    background-color: $secondary;
 
     position: absolute;
     top: 100%;
     left: 0;
-
-    overflow: hidden;
 
     animation: wipe-out-up .2s both;
 	//animation-delay: 5s;
@@ -25,15 +24,16 @@
 
 }
 
-.subnav-link {
-    display: block;
+.subnav__item {
     padding: 1rem 1.2rem;
+}
 
+.subnav-link {
     font-size: 1.4rem;
 
     //transition: background-color .1s linear;
 
     &:hover {
-        background-color: darken($blue, 5%);
+        color: $orange;
     }
 }

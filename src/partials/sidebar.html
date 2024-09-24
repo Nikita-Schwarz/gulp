@@ -1,26 +1,17 @@
 <aside class="sidebar">
     <div class="profile">
 
-        <img class="profile-icon" src="./assets/images/avatar.jpg" alt="">
+        <div class="profile__icon">
+            <img src="./assets/images/avatar.jpg" alt="">
+        </div>
 
-        <div class="profile-name">{{ profile.name }}</div>
-
-        <ul class="social">
-            <li class="social-item">
-                <a class="social-link" href="https://vk.com/blackn00" target="_blank">
-                    <img src="./assets/images/vk.svg" alt="">
-                </a>
-            </li>
-            <li class="social-item">
-                <a class="social-link" href="https://t.me/Schwarz_Nikita" target="_blank">
-                    <img src="./assets/images/telegram.svg" alt="">
-                </a>
-            </li>
-        </ul>
-
-
-
-        <div class="profile-description">{{ profile.description }}</div>
+        <div class="profile__name">
+            <h1>{{ profile.name }}</h1>
+        </div>
+        <span class="line--yellow"></span>
+        <div class="profile__description">
+            <p>{{ profile.description }}</p>
+        </div>
 
     </div>
 </aside>

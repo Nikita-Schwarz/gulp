@@ -1,55 +1,30 @@
-/* .nav-list {
+.nav__list {
     display: flex;
 }
 
-.nav-item {
+.nav__item {
+    padding: 1.4rem;
+
     position: relative;
-
-    //transition: all .2s linear;
-
-    &:hover {
-        .nav-link {
-            background-color: $blue;
-        }
-
-        >.subnav {
-            //display: block;
-
-            opacity: 1;
-            visibility: visible;
-            animation: wipe-in-down .2s both;
-        }
-    }
 }
 
-.nav-link {
-    display: block;
-    padding: 1.3rem;
+.nav__link {
 
-    border-radius: $border-radius;
-
-
+    &:hover {
+        color: $orange;
+    }
 
     &.has-subnav {
         position: relative;
-        padding-right: 3rem;
-        border-radius: $border-radius $border-radius 0 0;
-
-        overflow-y: hidden;
 
         &:after {
-            content: "";
-            display: block;
-            margin-top: 2px;
-
-            border-style: solid;
-            border-width: 6px 5px 0 5px;
-            border-color: $white transparent transparent transparent;
-
-            position: absolute;
-            top: 50%;
-            right: 1rem;
-            transform: translateY(-50%);
+            content: "\e5c5";
+            display: inline-block;
+            font-family: 'Material Symbols Outlined';
+            width: 1.5rem;
+            color: $orange;
+            font-size: 2rem;
+            vertical-align: bottom;
         }
     }
-} */
+}
