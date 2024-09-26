@@ -1,1 +1,138 @@
-<!doctype html><html lang="ru"><head><link rel="stylesheet" href="./assets/css/styles.min.css"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no"><title>Home</title></head><body><div class="page" id="page"><header class="header" id="header"><nav class="nav"><ul class="nav-list"><li class="nav-item"><a class="nav-link" href="#">Главная</a></li><li class="nav-item"><a class="nav-link has-subnav" href="#">Походы</a><ul class="subnav"><li><a class="subnav-link" href="#">Фишт</a></li><li><a class="subnav-link" href="#">Кировский</a></li><li><a class="subnav-link" href="#">Чёртов палец</a></li></ul></li><li class="nav-item"><a class="nav-link" href="#">Фото</a></li></ul></nav></header><aside class="sidebar"><div class="profile"><a class="profile-icon" href="" title="Обо мне"><picture><source srcset="./assets/images/avatar.webp" type="image/webp"><img src="./assets/images/avatar.jpg" alt=""></picture></a><div class="profile-name">Никита Чёрный</div><div class="profile-subname">Личный блог</div><ul class="social"><li class="social-item"><a class="social-link" href="https://vk.com/blackn00" target="_blank"><img src="./assets/images/vk.svg" alt=""></a></li><li class="social-item"><a class="social-link" href="https://t.me/Schwarz_Nikita" target="_blank"><img src="./assets/images/telegram.svg" alt=""></a></li></ul><div class="profile-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quis accusantium! Neque tempora provident alias tempore, id voluptatum, pariatur soluta recusandae temporibus omnis, labore sint? Assumenda possimus nesciunt ducimus qui.</div></div></aside><main class="main"><div class="container"><article class="post"><div class="post-header"><h1 class="post-title">Мой первый пост</h1></div><div class="post-preview"><picture><source srcset="./assets/images/post/20240429_111244.webp" type="image/webp"><img src="./assets/images/post/20240429_111244.jpg" alt=""></picture></div><div class="post-description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p></div><div class="post-footer"><ul class="post-data"><li class="post-data--item"><time datetime="2024-06-25">25.06.2024</time></li><li class="post-data--item"><a class="post-read" href="#">Подробнее...</a></li></ul></div></article><article class="post"><div class="post-header"><h1 class="post-title">Мой первый пост</h1></div><div class="post-preview"><picture><source srcset="./assets/images/post/20240429_111244.webp" type="image/webp"><img src="./assets/images/post/20240429_111244.jpg" alt=""></picture></div><div class="post-description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p></div><div class="post-footer"><ul class="post-data"><li class="post-data--item"><time datetime="2024-06-25">25.06.2024</time></li><li class="post-data--item"><a class="post-read" href="#">Подробнее...</a></li></ul></div></article></div></main></div><script src="assets/js/app.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <title>Home</title></head>
+<body>
+
+    <div class="page" id="page">
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link has-subnav" href="#">Походы</a>
+        
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a class="subnav-link" href="#">Фишт</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a class="subnav-link" href="#">Кировский</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a class="subnav-link" href="#">Чёртов палец</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Галерея</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+        
+                <div class="profile__icon">
+                    <img src="./assets/images/avatar.jpg" alt="">
+                </div>
+        
+                <div class="profile__name">
+                    <h1>Никита Чёрный</h1>
+                </div>
+                <span class="line--yellow"></span>
+                <div class="profile__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quis accusantium! Neque tempora provident alias tempore, id voluptatum, pariatur soluta recusandae temporibus omnis, labore sint? Assumenda possimus nesciunt ducimus qui.</p>
+                </div>
+        
+            </div>
+        </aside>
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+                
+                <article class="post">
+                
+                    <div class="post-header">
+                        <h1 class="post-title">Мой первый пост</h1>
+                    </div>
+                
+                    <div class="post-preview">
+                        <img src="./assets/images/post/20240429_111244.jpg" alt="">
+                    </div>
+                
+                    <div class="post-description">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p>
+                    </div>
+                
+                
+                
+                    <div class="post-footer">
+                        <ul class="post-data">
+                            <li class="post-data--item">
+                                <time datetime="2024-06-25">25.06.2024</time>
+                            </li>
+                            <li class="post-data--item">
+                                <a class="post-read" href="#">Подробнее...</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </article>
+                <article class="post">
+                
+                    <div class="post-header">
+                        <h1 class="post-title">Мой первый пост</h1>
+                    </div>
+                
+                    <div class="post-preview">
+                        <img src="./assets/images/post/20240429_111244.jpg" alt="">
+                    </div>
+                
+                    <div class="post-description">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p>
+                    </div>
+                
+                
+                
+                    <div class="post-footer">
+                        <ul class="post-data">
+                            <li class="post-data--item">
+                                <time datetime="2024-06-25">25.06.2024</time>
+                            </li>
+                            <li class="post-data--item">
+                                <a class="post-read" href="#">Подробнее...</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </article>
+                
+                
+            </div>
+        </main>
+    </div>
+    <footer></footer>    <!-- JS -->
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>
