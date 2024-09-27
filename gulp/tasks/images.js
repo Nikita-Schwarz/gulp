@@ -28,6 +28,8 @@ function images(isBuild, serverInstance) {
 		)
 
 		.pipe(gulp.dest(paths.build.images))
+		.pipe(gulp.src(paths.src.svg))
+		.pipe(gulp.dest(paths.build.images))
 		.pipe(serverInstance.stream());
 };
 

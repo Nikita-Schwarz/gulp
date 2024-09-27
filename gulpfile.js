@@ -12,6 +12,7 @@ import { scss } from './gulp/tasks/scss.js'
 import { javascript } from './gulp/tasks/javascript.js';
 import { images } from './gulp/tasks/images.js';
 import { zip } from './gulp/tasks/zip.js';
+import { createSvgSprite } from './gulp/tasks/create-svg-sprite.js';
 
 const isBuild = process.argv.includes('--build');
 const browserSyncInstance = browserSync.create();
@@ -28,9 +29,10 @@ function watcher() {
     gulp.watch(paths.watch.scss, SCSS);
     gulp.watch(paths.watch.js, JAVASCRIPT);
     gulp.watch(paths.watch.images, IMAGES);
+    gulp.watch(paths.watch.svgIcons, createSvgSprite);
 }
 
-const mainTasks = gulp.parallel(copyRootFiles, HTML, SCSS, JAVASCRIPT, IMAGES);
+const mainTasks = gulp.parallel(copyRootFiles, createSvgSprite, HTML, SCSS, JAVASCRIPT, IMAGES);
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, SERVER));
 
 const build = gulp.series(reset, mainTasks);
@@ -38,4 +40,4 @@ const deployZIP = gulp.series(reset, mainTasks, zip);
 
 export default dev;
 
-export { build, deployZIP }
+export { build, deployZIP, createSvgSprite }
