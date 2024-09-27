@@ -6,7 +6,7 @@ import { logger } from "../config/logger.js";
 
 export function createSvgSprite() {
   return gulp.src(paths.src.svgIcons, {})
-    .pipe(logger.handleError('SVG SPRITE'))
+    .pipe(logger.handleError(' SVG SPRITE '))
     .pipe(
       svgSprite({
         mode: {
