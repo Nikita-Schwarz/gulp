@@ -11,8 +11,8 @@ import { html } from './gulp/tasks/html.js';
 import { scss } from './gulp/tasks/scss.js'
 import { javascript } from './gulp/tasks/javascript.js';
 import { images } from './gulp/tasks/images.js';
-import { zip } from './gulp/tasks/zip.js';
 import { createSvgSprite } from './gulp/tasks/create-svg-sprite.js';
+import { zip } from './gulp/tasks/zip.js';
 
 const isBuild = process.argv.includes('--build');
 const browserSyncInstance = browserSync.create();
