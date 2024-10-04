@@ -32,5 +32,3 @@ function images(isBuild, serverInstance) {
 		.pipe(gulp.dest(paths.build.images))
 		.pipe(serverInstance.stream());
 };
-
-export { images };
