@@ -1,1 +1,177 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no"><title>Home</title><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><link rel="stylesheet" href="./assets/css/styles.min.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head><body><div class="page" id="page"><header class="header" id="header"><div class="header__left"><nav class="nav"></nav><ul class="nav__list"><li class="nav__item"><a class="nav__link" href="#">Главная</a></li><li class="nav__item"><button class="nav__link has__subnav" aria-expanded="false" aria-controls="list">Походы</button><ul class="subnav__list" aria-hidden="true"><li class="subnav__item"><a class="subnav__link" href="#">Фишт</a></li><li class="subnav__item"><a class="subnav__link" href="#">Кировский</a></li><li class="subnav__item"><a class="subnav__link" href="#">Чёртов палец</a></li></ul></li><li class="nav__item"><a class="nav__link" href="#">Галерея</a></li></ul></div><div class="header__right"><div class="social__icons"><a class="social__link" href="" title="Telegram"><svg class="icon"><use href="/assets/images/sprite.svg#telegram"></use></svg> </a><a class="social__link" href="" title="Vkontakte"><svg class="icon"><use href="/assets/images/sprite.svg#vk"></use></svg> </a><a class="social__link" href="" title="GitHub"><svg class="icon"><use href="/assets/images/sprite.svg#github"></use></svg></a></div><form class="search" action="search.html" method="get"><input class="search__input" type="text" placeholder="Поиск"> <span><svg class="search__icon"><use href="/assets/images/sprite.svg#search"></use></svg></span></form></div></header><aside class="sidebar"><div class="profile"><div class="profile__icon"><picture><source srcset="./assets/images/avatar.webp" type="image/webp"><img src="./assets/images/avatar.jpg" alt=""></picture></div><div class="profile__name"><h1>Никита Чёрный</h1></div><span class="line--yellow"></span><div class="profile__description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quis accusantium! Neque tempora provident alias tempore, id voluptatum, pariatur soluta recusandae temporibus omnis, labore sint? Assumenda possimus nesciunt ducimus qui.</p></div></div></aside><main class="main"><div class="container"><article class="post"><div class="post-header"><h1 class="post-title">Мой первый пост</h1></div><div class="post-preview"><picture><source srcset="./assets/images/post/20240429_111244.webp" type="image/webp"><img src="./assets/images/post/20240429_111244.jpg" alt=""></picture></div><div class="post-description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p></div><div class="post-footer"><ul class="post-data"><li class="post-data--item"><time datetime="2024-06-25">25.06.2024</time></li><li class="post-data--item"><a class="post-read" href="#">Подробнее...</a></li></ul></div></article><article class="post" data-aos="fade-up" data-aos-offset="50"><div class="post-header"><h1 class="post-title">Мой первый пост</h1></div><div class="post-preview"><picture><source srcset="./assets/images/post/20240429_111244.webp" type="image/webp"><img src="./assets/images/post/20240429_111244.jpg" alt=""></picture></div><div class="post-description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p></div><div class="post-footer"><ul class="post-data"><li class="post-data--item"><time datetime="2024-06-25">25.06.2024</time></li><li class="post-data--item"><a class="post-read" href="#">Подробнее...</a></li></ul></div></article></div></main></div><footer></footer><script src="assets/js/app.min.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script><script>AOS.init();</script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    
+</head>
+<body>
+
+    <div class="page" id="page">
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <div class="header__left">
+                <nav class="nav"></nav>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__link has__subnav" aria-expanded="false" aria-controls="list">Походы</button>
+        
+                            <ul class="subnav__list" aria-hidden="true">
+                                <li class="subnav__item">
+                                    <a class="subnav__link" href="#">Фишт</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a class="subnav__link" href="#">Кировский</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a class="subnav__link" href="#">Чёртов палец</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Галерея</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="header__right">
+                <div class="social__icons">
+        
+                    <a class="social__link" href="" title="Telegram">
+                        <svg class="icon">
+                            <use href="/assets/images/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+        
+                    <a class="social__link" href="" title="Vkontakte">
+                        <svg class="icon">
+                            <use href="/assets/images/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+        
+                    <a class="social__link" href="" title="GitHub">
+                        <svg class="icon">
+                            <use href="/assets/images/sprite.svg#github"></use>
+                        </svg>
+                    </a>
+        
+                </div>
+        
+                <form class="search" action="search.html" method="get">
+                    <input class="search__input" type="text" placeholder="Поиск">
+                    <span>
+                        <svg class="search__icon">
+                            <use href="/assets/images/sprite.svg#search"></use>
+                        </svg>
+                    </span>
+                </form>
+            </div>
+        </header>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="profile">
+        
+                <div class="profile__icon">
+                    <img src="./assets/images/avatar.jpg" alt="">
+                </div>
+        
+                <div class="profile__name">
+                    <h1>Никита Чёрный</h1>
+                </div>
+                <span class="line--yellow"></span>
+                <div class="profile__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quis accusantium! Neque tempora provident alias tempore, id voluptatum, pariatur soluta recusandae temporibus omnis, labore sint? Assumenda possimus nesciunt ducimus qui.</p>
+                </div>
+        
+            </div>
+        </aside>
+        <!-- MAIN -->
+        <main class="main">
+            <div class="container">
+                
+                
+                <article class="post">
+                
+                    <div class="post-header">
+                        <h1 class="post-title">Мой первый пост</h1>
+                    </div>
+                
+                    <div class="post-preview">
+                        <img src="./assets/images/post/20240429_111244.jpg" alt="">
+                    </div>
+                
+                    <div class="post-description">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p>
+                    </div>
+                
+                
+                
+                    <div class="post-footer">
+                        <ul class="post-data">
+                            <li class="post-data--item">
+                                <time datetime="2024-06-25">25.06.2024</time>
+                            </li>
+                            <li class="post-data--item">
+                                <a class="post-read" href="#">Подробнее...</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </article>
+                
+                <article class="post" data-aos="fade-up" data-aos-offset="50">
+                
+                    <div class="post-header">
+                        <h1 class="post-title">Мой первый пост</h1>
+                    </div>
+                
+                    <div class="post-preview">
+                        <img src="./assets/images/post/20240429_111244.jpg" alt="">
+                    </div>
+                
+                    <div class="post-description">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit delectus amet architecto, ut, ipsum at quaerat consectetur error quia corporis enim fuga atque temporibus laudantium omnis rerum consequuntur adipisci. Quod.</p>
+                    </div>
+                
+                
+                
+                    <div class="post-footer">
+                        <ul class="post-data">
+                            <li class="post-data--item">
+                                <time datetime="2024-06-25">25.06.2024</time>
+                            </li>
+                            <li class="post-data--item">
+                                <a class="post-read" href="#">Подробнее...</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </article>
+            </div>
+        </main>
+    </div>
+    <footer></footer>    <!-- JS -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
