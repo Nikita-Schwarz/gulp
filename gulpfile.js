@@ -40,4 +40,4 @@ const deployZIP = gulp.series(reset, mainTasks, zip);
 
 export default dev;
 
-export { build, deployZIP, createSvgSprite }
+export { build, deployZIP, createSvgSprite, IMAGES }

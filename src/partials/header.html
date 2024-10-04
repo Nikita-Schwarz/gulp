@@ -1,29 +1,63 @@
 <header class="header" id="header">
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link has-subnav" href="#">Походы</a>
+    <div class="header__left">
+        <nav class="nav"></nav>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__link has__subnav" aria-expanded="false" aria-controls="list">Походы</button>
 
-                <div class="subnav">
-                    <ul class="subnav__list">
+                    <ul class="subnav__list" aria-hidden="true">
                         <li class="subnav__item">
-                            <a class="subnav-link" href="#">Фишт</a>
+                            <a class="subnav__link" href="#">Фишт</a>
                         </li>
                         <li class="subnav__item">
-                            <a class="subnav-link" href="#">Кировский</a>
+                            <a class="subnav__link" href="#">Кировский</a>
                         </li>
                         <li class="subnav__item">
-                            <a class="subnav-link" href="#">Чёртов палец</a>
+                            <a class="subnav__link" href="#">Чёртов палец</a>
                         </li>
                     </ul>
-                </div>
-            </li>
-            <li class="nav__item">
-                <a class="nav__link" href="#">Галерея</a>
-            </li>
-        </ul>
-    </nav>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Галерея</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header__right">
+        <div class="social__icons">
+
+            <a class="social__link" href="" title="Telegram">
+                <svg class="icon">
+                    <use href="/assets/images/sprite.svg#telegram"></use>
+                </svg>
+            </a>
+
+            <a class="social__link" href="" title="Vkontakte">
+                <svg class="icon">
+                    <use href="/assets/images/sprite.svg#vk"></use>
+                </svg>
+            </a>
+
+            <a class="social__link" href="" title="GitHub">
+                <svg class="icon">
+                    <use href="/assets/images/sprite.svg#github"></use>
+                </svg>
+            </a>
+
+        </div>
+
+        <form class="search" action="search.html" method="get">
+            <input class="search__input" type="text" placeholder="Поиск">
+            <span>
+                <svg class="search__icon">
+                    <use href="/assets/images/sprite.svg#search"></use>
+                </svg>
+            </span>
+        </form>
+    </div>
 </header>

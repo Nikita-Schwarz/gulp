@@ -1,30 +1,57 @@
 .nav__list {
     display: flex;
+
+/*     @include breakpoint($tablet-bp) {
+        flex-direction: column;
+    } */
 }
 
 .nav__item {
-    padding: 1.4rem;
-
     position: relative;
+    padding: 1.5rem;
+    &:hover, :focus-visible {
+        color: $orange;
+
+        > .subnav__list {
+            line-height: inherit;
+            color: $white;
+        }
+    }
 }
 
 .nav__link {
+    display: block;
+
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.25;
 
     &:hover {
         color: $orange;
     }
 
-    &.has-subnav {
-        position: relative;
+    &.--active {
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
 
+
+    &.has__subnav {
         &:after {
-            content: "\e5c5";
+            content: "\e313";
+            font-family: 'Material Icons';
+            font-size: inherit;
+            font-weight: 700;
+
             display: inline-block;
-            font-family: 'Material Symbols Outlined';
+            position: relative;
+            left: 2px;
+
             color: $orange;
-            font-size: 2rem;
             vertical-align: bottom;
-            line-height: 1;
+
+            transition: all .2s linear;
         }
     }
 }

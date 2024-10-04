@@ -16,7 +16,7 @@ import { logger } from "../config/logger.js";
 
 const sass = gulpSass(dartSass);
 
-function scss(isBuild, serverInstance) {
+export function scss(isBuild, serverInstance) {
 	const webpConfig = {
 		webpClass: '.webp',
 		noWebpClass: '.no-webp',
@@ -40,5 +40,3 @@ function scss(isBuild, serverInstance) {
 		.pipe(gulp.dest(paths.build.css))
 		.pipe(serverInstance.stream());
 };
-
-export { scss };

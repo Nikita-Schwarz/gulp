@@ -1,5 +1,6 @@
 .sidebar {
     width: $sidebar-width;
+    height: 100vh;
 
     background-color: $secondary;
 
@@ -8,7 +9,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
 
     z-index: $z-index-sidebar;
 

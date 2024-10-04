@@ -1,32 +1,26 @@
-.subnav {
-    //opacity: 0;
-    //visibility: hidden;
-    //display: none;
-
+.subnav__list {
     width: 20rem;
-
-    border-radius: 0 0 4px 4px;
-
-    background-color: $secondary;
-
     position: absolute;
     top: 100%;
     left: 0;
+    display: grid;
+    line-height: 0;
 
-    animation: wipe-out-up .2s both;
-	//animation-delay: 5s;
-
-    z-index: $z-index-header;
-
-
+    background-color: $secondary;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    color: transparent;
+    transition: line-height 0.5s, color 0.5s;
 }
 
 .subnav__item {
-    padding: 1rem 1.2rem;
+    overflow: hidden;
 }
 
-.subnav-link {
+.subnav__link {
     font-size: 1.4rem;
+    display: block;
+    margin: 0.5lh 1.5rem 0.5lh ;
 
     //transition: background-color .1s linear;
 

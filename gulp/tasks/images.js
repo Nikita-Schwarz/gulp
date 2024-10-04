@@ -6,7 +6,7 @@ import { plugins } from '../config/plugins.js';
 import { paths } from '../config/paths.js';
 import { logger } from "../config/logger.js";
 
-function images(isBuild, serverInstance) {
+export function images(isBuild, serverInstance) {
 	return gulp.src(paths.src.images, { encoding: false })
 		.pipe(logger.handleError(' IMAGES '))
 

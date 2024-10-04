@@ -27,10 +27,10 @@
   "author": "Nikita Schwarz",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "autoprefixer": "^10.4.19",
-    "browser-sync": "^3.0.2",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
     "chalk": "^5.3.0",
     "del": "^7.1.0",
     "gh-pages": "^6.1.1",
@@ -41,7 +41,7 @@
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.1.0",
     "gulp-newer": "^1.4.0",
-    "gulp-notify": "^4.0.0",
+    "gulp-notify": "^5.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
@@ -53,10 +53,10 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^6.0.0",
     "panini": "^1.7.2",
-    "postcss": "^8.4.38",
-    "postcss-preset-env": "^9.5.14",
+    "postcss": "^8.4.47",
+    "postcss-preset-env": "^10.0.5",
     "postcss-sort-media-queries": "^5.2.0",
-    "sass": "^1.77.6",
+    "sass": "^1.79.4",
     "webp-converter": "^2.2.3",
     "webpack-stream": "^7.0.0"
   },
@@ -64,8 +64,5 @@
     "last 1 version",
     "> 1%",
     "IE 10"
-  ],
-  "dependencies": {
-    "aos": "^2.3.4"
-  }
+  ]
 }
